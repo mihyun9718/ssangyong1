@@ -1,0 +1,294 @@
+.inner {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .inner {
+        margin: 0 15px;
+    }
+}
+
+.header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 120px;
+}
+
+.header .inner .gnb>ul {
+    display: flex;
+    gap: 32px;
+}
+
+.mopen {
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+    .header .inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 120px;
+    }
+
+    .header .inner .gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        z-index: 1000;
+
+        width: calc(100% - 70px);
+        height: 100vh;
+
+        background: #94958b;
+
+        padding: 160px 15px 0 15px;
+
+        transition: 0.2s;
+    }
+
+    .header .inner .gnb>ul>li>a {
+        display: block;
+        color: #131313;
+        line-height: 30px;
+        border-bottom: 1px solid rgba(0, 33, 66, 0.5);
+    }
+
+    .header .inner .gnb.on {
+        left: 0;
+    }
+
+    .header .inner .gnb>ul {
+        display: flex;
+        gap: 32px;
+
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .mopen {
+        display: block;
+
+        position: fixed;
+        top: 30px;
+        right: 15px;
+        z-index: 1000;
+
+        width: 40px;
+        height: 40px;
+
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+
+        font-size: 0;
+
+
+    }
+
+    .mopen::before {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 8px;
+        right: 8px;
+
+        height: 2px;
+
+        background: #333;
+
+    }
+
+    .mopen.on::before {
+        opacity: 0;
+    }
+
+    .mopen::after {
+        content: "";
+        position: absolute;
+        bottom: 9px;
+        left: 8px;
+        right: 8px;
+
+        height: 2px;
+
+        background: #333;
+
+    }
+
+    .mopen.on::after {
+        opacity: 0;
+    }
+
+    .mopen button {
+        border: none;
+        background: transparent;
+    }
+
+    .mopen button::before {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 8px;
+        right: 8px;
+
+        height: 2px;
+
+        background: #333;
+    }
+
+    .mopen.on button::before {
+        transform: rotate(45deg);
+    }
+
+    .mopen button::after {
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: 8px;
+        right: 8px;
+
+        height: 2px;
+
+        background: #333;
+    }
+
+    .mopen.on button::after {
+        transform: rotate(-45deg);
+    }
+}
+
+.main_content {
+    padding: 120px 0;
+    background: #ddd;
+}
+
+.main_content .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.main_content .inner .itm {
+    flex: 1;
+    background: #fff;
+}
+
+.main_content .inner {
+    flex-direction: column;
+    gap: 80px;
+}
+
+.main_content .inner .itm {
+    background: #fff;
+}
+
+.main_content .inner .itm img {
+    width: 100%;
+}
+
+.main_visual .arrows {
+    opacity: 0;
+}
+
+
+.main_content .inner {
+    position: relative;
+    max-width: 700px;
+    height: auto;
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main_content .inner .qks_itm .img_box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+}
+
+.main_content .inner .qks_itm p {
+    margin-bottom: 16px;
+}
+
+
+.mini_main_content .inner {
+    position: relative;
+    max-width: 700px;
+    height: auto;
+}
+
+.mini_main_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.mini_main_content .inner .itm_box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+}
+
+.mini_main_content .inner .itm {
+    margin-bottom: 10px;
+}
+
+.main_contentnews .inner {
+    position: relative;
+    max-width: 700px;
+    height: auto;
+}
+
+.main_contentmap {
+    position: relative;
+    max-width: 700px;
+}
+
+.main_contentmap .inner .title h2 {
+    font-size: 34px;
+}
+
+
+.main_contentmap .inner .title p {
+    font-size: 16px;
+}
+
+.footer {
+    color: #ddd;
+    line-height: 30px;
+}
+
+.footer .logo_itm .logo {
+    margin: 30px;
+}
+
+.footer .logo_itm .sns {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 auto;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .logotxt_box {
+    flex-direction: column;
+}
