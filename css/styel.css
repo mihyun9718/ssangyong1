@@ -307,19 +307,19 @@
 
 .main_visual .arrows .prev {
     position: absolute;
-    bottom: 27%;
+    bottom: 35%;
     right: 22%;
 }
 
 .main_visual .arrows .pause {
     position: absolute;
-    bottom: 27%;
+    bottom: 35%;
     right: 20%;
 }
 
 .main_visual .arrows .next {
     position: absolute;
-    bottom: 27%;
+    bottom: 35%;
     right: 18%;
 
 }
